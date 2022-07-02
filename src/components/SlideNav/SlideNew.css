@@ -1,0 +1,81 @@
+#side_bar.Admin{
+    width: 320px;
+    height: 100vh;
+    background: #11143D;
+    box-shadow: 0px 41.7776px 58.4887px rgba(0, 0, 0, 0.10064), 0px 22.3363px 31.2708px rgba(0, 0, 0, 0.083455), 0px 12.5216px 17.5302px rgba(0, 0, 0, 0.07), 0px 6.6501px 9.31014px rgba(0, 0, 0, 0.056545), 0px 2.76726px 3.87416px rgba(0, 0, 0, 0.0393604);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#side_bar.Admin .logo {
+    padding: 25px;
+    border-bottom: none;
+    text-align: center;
+}
+
+#side_bar img {
+    height: 50px;
+}
+
+#side_bar a svg{
+    font-size: 30px;
+}
+
+#side_bar .menuItem {
+    padding: 25px;
+    overflow-y: scroll;
+    height: 88vh;
+}
+
+#side_bar .menuItem li{
+    margin-bottom: 10px;
+}
+
+#side_bar.Admin .menuItem a{
+    width: 100%;
+    background: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: #FFF;
+
+}
+
+#side_bar.Admin .menuItem a.active{
+    background: var(--admin_bg);
+    color: #FFF;
+}
+
+#side_bar.Admin .menuItem a .svg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+#side_bar .menuItem a svg path{
+    fill: #FFF;
+}
+
+#side_bar .menuItem a.active .svg {
+    background: #FFF;
+}
+
+#side_bar .menuItem a.active .svg svg path{
+    fill: var(--admin_bg);
+}
+
+#side_bar .menuItem a:hover{
+    background: var(--admin_bg);
+    color: #FFF;
+}
+
+#side_bar .menuItem a:hover svg path{
+    fill: #FFF;
+    border: 1px solid #FFF;
+}
+

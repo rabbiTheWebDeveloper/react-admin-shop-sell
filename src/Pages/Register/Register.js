@@ -1,16 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import LoginBanner from "../../components/LoginBanner/LoginBanner";
-import "./Login.css";
 
-const Login = () => {
+const Register = () => {
   return (
     <section id="login">
       <div className="container">
-        <div className="row">
+        <div className="row d_flex d_justify">
           {/* left */}
           <div className="col-lg-6">
-            <div className="left_login">
+            <div className="left_login register">
               <div className="img">
                 <img src="frontend_assets/images/login_logo.png" alt="" />
               </div>
@@ -21,18 +19,25 @@ const Login = () => {
                   &amp; You’re Ready To Go !
                 </p>
                 <div className="form_part">
-                  {/* E-mail */}
+                  {/* Full Name */}
                   <div className="custome_input">
-                    <label>E-mail Address or Phone Number</label>
-                    <input
-                      type="text"
-                      placeholder="Enter e-mail address or phone number here"
-                    />
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter full name here" />
+                  </div>
+                  {/* Phone Number  */}
+                  <div className="custome_input">
+                    <label>Phone Number</label>
+                    <input type="text" placeholder="Phone Number" />
                   </div>
                   {/* Password */}
                   <div className="custome_input">
                     <label>Password</label>
                     <input type="text" placeholder="Enter Password here" />
+                  </div>
+                  {/* E-mail Address  */}
+                  <div className="custome_input">
+                    <label>Confirm Password </label>
+                    <input type="text" placeholder="Rewrite Password here" />
                   </div>
                   {/* Submit */}
                   <div className="custome_input">
@@ -44,8 +49,7 @@ const Login = () => {
                   {/* Submit */}
                   <div className="custome_input">
                     <p>
-                      Don’t Have An Account ?{" "}
-                      <Link to="/register">Sign Up</Link>
+                      Already Have An Account ?<a href="/login">Log In</a>
                     </p>
                     <p className="logInSocial">Login With Social Media</p>
                     <div className="logInSocialLink">
@@ -99,14 +103,14 @@ const Login = () => {
               </div>
             </div>
           </div>
-         <div  class="col-lg-6">
-         <LoginBanner></LoginBanner>
-         </div>
-         
+          {/* Right */}
+          <div className="col-lg-6">
+          <LoginBanner></LoginBanner>
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default Login;
+export default Register;
