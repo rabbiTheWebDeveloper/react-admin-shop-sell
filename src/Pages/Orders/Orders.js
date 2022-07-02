@@ -1,9 +1,10 @@
 import React from 'react';
+import OrderList from '../../components/OrdersComponent/OrderList/OrderList';
 
 const Orders = () => {
     return (
         <div>
-            <h2>comming sooooooooon</h2>
+            <OrderList></OrderList>
         </div>
     );
 };
