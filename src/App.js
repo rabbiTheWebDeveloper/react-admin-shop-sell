@@ -10,17 +10,23 @@ import Orders from "./Pages/Orders/Orders";
 function App() {
   return (
     <Router>
-      <SlideNav></SlideNav>
-      <StartMenuBar></StartMenuBar>
+      {/* <SlideNav></SlideNav>
+      <StartMenuBar></StartMenuBar> */}
       <Switch>
       <Route exact path="/">
           {/* <Login></Login> */}
+          <SlideNav></SlideNav>
+      <StartMenuBar></StartMenuBar>
           <Dashboard></Dashboard>
         </Route>
         <Route exact path="/dashboard">
+        <SlideNav></SlideNav>
+      <StartMenuBar></StartMenuBar>
           <Dashboard></Dashboard>
         </Route>
         <Route exact path="/orders">
+        <SlideNav></SlideNav>
+      <StartMenuBar></StartMenuBar>
           <Orders></Orders>
         </Route>
         <Route exact path="/login">
