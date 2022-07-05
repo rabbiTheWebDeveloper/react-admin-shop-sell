@@ -1,0 +1,48 @@
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- 
+    START chart Js PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#Total_order.Admin #myChart {
+    width: 70% !important;
+    height: 600px !important;
+    object-fit: fill;
+}
+
+#Total_order.Admin.openTicket .Total_order_item h3{
+    color: var(--text_color2);
+}
+
+#Total_order.Admin.openTicket .Total_order_item .header_part h3 svg path{
+    fill: var(--text_color2);
+}
+
+#Total_order.Admin .SolvedTicket {
+    margin-left: 50px;
+}
+
+#Total_order.Admin.openTicket  .middle_part{
+    align-items: flex-start;
+}
+
+#Total_order.Admin.openTicket  .middle_part ul{
+    margin-top: 10px;
+}
+
+#Total_order.Admin.openTicket  .middle_part ul li{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#Total_order.Admin.openTicket  .middle_part ul li:last-child{
+    margin-bottom: 0;
+}
+
+#Total_order.Admin.openTicket  .middle_part ul li::after {
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: -20px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--admin_bg);
+}
